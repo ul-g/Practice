@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="back-button">
+                <a href="index.html">
+                    <img src="images\bc.png" alt="Назад">
+                </a>
+            </div>
+            <div class="user-icon" id="userIcon">
+                <img src="images\User.png" alt="Пользователь">
+                <a href="index.html">
+                    <img src="images\Home (1).png" alt="Дом">
+                </a>
+                
+            </div>
+        </div>
+        <div class="progress">
+            <h2>Название вакансии</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <div class="timeline">
+                <div class="timeline-item completed">
+                    <div class="marker checked"></div>
+                    <div class="content">
+                        <h3>ЗАДАНИЕ 1</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <button id="task1" class="view-task-button">Посмотреть задание</button>
+                </div>
+                <div class="timeline-item">
+                    <div class="marker"></div>
+                    <div class="content">
+                        <h3>ЗАДАНИЕ 2</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <button id="task2" class="view-task-button">Посмотреть задание</button>
+                </div>
+                <div class="timeline-item">
+                    <div class="marker"></div>
+                    <div class="content">
+                        <h3>ЗАДАНИЕ 3</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <button id="task3" class="view-task-button">Посмотреть задание</button>
+                </div>
+                <div class="timeline-item">
+                    <div class="marker"></div>
+                    <div class="content">
+                        <h3>ЗАДАНИЕ 4</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <button id="task4" class="view-task-button">Посмотреть задание</button>
+                </div>
+                <div class="timeline-item">
+                    <div class="marker"></div>
+                    <div class="content">
+                        <h3>ЗАДАНИЕ 5</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <button id="task5" class="view-task-button">Посмотреть задание</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© Цирюльникъ. Все права защищены</p>
+            <img src="images\Social Icons (1).png" alt="ВКонтакте">
+        </div>
+    </div>
+
+
+    <div id="taskModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <img src="images\fr.png" alt="Задание">
+                <h2>Задание</h2>
+            </div>
+            <h3>Название задания</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <form id="taskForm">
+                <label for="fileUpload">Загрузить файл:</label>
+                <input type="file" id="fileUpload">
+                <input type="submit" class="submit-button" value="Отправить">
+            </form>
+        </div>
+    </div>
+
+    <div id="thankYouModal" class="modal">
+        <div class="modal-content">
+            <h2>Спасибо!</h2>
+            <p>Ваше задание было успешно отправлено.</p>
+            <button id="continueButton" class="submit-button">Продолжить</button>
+        </div>
+    </div>
+
+    <div id="congratulationsModal" class="modal">
+        <div class="modal-content">
+            <h2>Поздравляем!</h2>
+            <p>Вы успешно завершили все задания. Теперь вы можете пройти финальный тест.</p>
+            <button id="finalTestButton" class="submit-button">Перейти к финальному тесту</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
